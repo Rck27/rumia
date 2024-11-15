@@ -1,0 +1,29 @@
+version: "3.1"
+
+
+
+
+
+# - story: ask about bhp
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: inform_bhp
+#   - action: action_calculate_bhp
+
+# - story: inform about bhp
+#   steps:
+#   - intent: mengapa_bayar_pajak
+#   - action: action_calculate_bhp
+# - story: interactive_story_1
+#   steps:
+#   - intent: inform_bhp
+#     entities:
+#     - frequency: UHF
+#     - usage: microwave link
+#     - bandwidth: 10Khz
+#     - power: 100W
+#     - city: surabaya
+#     - province: jawa timur
+#   - action: hitung_bhp
+#   - action: action_hitung_bhp

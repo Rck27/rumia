@@ -1,0 +1,63 @@
+{
+  "goodbye": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4,
+    "confused_with": {}
+  },
+  "inform_bhp": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 6,
+    "confused_with": {}
+  },
+  "membantu": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 3,
+    "confused_with": {}
+  },
+  "greet": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 5,
+    "confused_with": {}
+  },
+  "tidak_membantu": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 6,
+    "confused_with": {}
+  },
+  "faq": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 68,
+    "confused_with": {}
+  },
+  "accuracy": 1.0,
+  "macro avg": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 92
+  },
+  "weighted avg": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 92
+  },
+  "micro avg": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 92
+  }
+}

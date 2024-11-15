@@ -1,0 +1,60 @@
+version: "3.1"
+
+rules:
+
+- rule: respond_greet
+  steps: 
+  - intent: greet
+  - action: utter_greet
+- rule: respond_goodbye
+  steps: 
+  - intent: goodbye
+  - action: utter_goodbye
+- rule: respond_faq
+  steps: 
+  - intent: faq
+  - action: utter_faq
+  - action: utter_apakah_membantu
+
+- rule: respond_membantu
+  steps: 
+  - intent: membantu
+  - action: utter_membantu
+- rule: respond_tidak membantu
+  steps: 
+  - intent: tidak_membantu
+  - action: utter_tidak_membantu
+
+
+- rule: activate_hitung_bhp
+  steps:
+  - intent: inform_bhp
+  - active_loop: hitung_bhp
+
+# - rule: Submit hitung_bhp form
+#   condition:
+#   - active_loop: hitung_bhp
+#   steps:
+#   - action: hitung_bhp
+#   - active_loop: null
+#   - slot_was_set:
+#     - requested_slot: null
+#   - action: validate_hitung_bhp
+
+
+# rules:
+# - rule: Activate form
+#   steps:
+#   - intent: inform_bhp
+#   - action: hitung_bhp
+#   - active_loop: hitung_bhp
+
+# - rule: Submit form
+#   condition:
+#   - active_loop: hitung_bhp
+#   steps:
+#   - action: hitung_bhp
+#   - active_loop: null
+#   - slot_was_set:
+#     - requested_slot: null
+#   - action: utter_submitS

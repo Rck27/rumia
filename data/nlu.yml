@@ -1,0 +1,224 @@
+version: "3.1"
+constrain_similarities: true
+nlu:
+
+
+
+
+# - intent: inform_bhp
+#   examples: |
+#     - bagaimana cara menghitung bhp untuk [microwave link](usage) pada band [EHF](frequency)
+#     - [fm komersial](usage)
+#     - [fm komersil](usage)
+#     - [siaran FM](usage)
+#     - [VHF](frequency)
+#     - [EHF](frequency)
+#     - [HF](frequency)
+#     - [LF](frequency)
+#     - [UHF](frequency)
+#     - [125 khz](bandwidth)
+#     - [500 w](power)
+#     - [500w](power)
+#     - [1Mw](power)
+#     - [kediri](city)
+#     - [jawa timur](province)
+#     - [surabaya](city)
+#     - [nganjuk](city)
+#     - [5 ghz](frequency)
+#     - [20 mhz](bandwidth)
+#     - [2.4 ghz](frequency)
+#     - [40 mhz](bandwidth)
+#     - [10 ghz](frequency)
+#     - [8.5 ghz](frequency)
+#     - [Jakarta](city)
+#     - [Surabaya](city)
+#     - [Bandung](city)
+#     - [Medan](city)
+#     - [Semarang](city)
+#     - [Palembang](city)
+#     - [Makassar](city)
+#     - [Denpasar](city)
+#     - [Bekasi](city)
+#     - [Tangerang](city)
+#     - [Depok](city)
+#     - [Semarang](city)
+#     - [Palembang](city)
+#     - [South Tangerang](city)
+#     - [Makassar](city)
+#     - [Batam](city)
+#     - [Pekanbaru](city)
+#     - [Bogor](city)
+#     - [Bandar Lampung](city)
+#     - [Padang](city)
+#     - tolong aku menghitung biaya untuk [microwave link](usage) pada frek [UHF](frequency) dengan bandwith [512khz](bandwidth) dan power [500w](power) di [kediri](city) [jawa timur](province)
+#     - hitung biaya untuk [microwave link](usage) pada frek [UHF](frequency) dengan bandwith [512khz](bandwidth) dan power [500w](power) di [kediri](city) [jawa timur](province)
+#     - simulasikan biaya untuk [fm komersial](usage) pada frek [VHF](frequency) dengan bandwith [512khz](bandwidth) dan power [500w](power) di [surabaya](city) [jawa timur](province)
+#      - berapa biaya untuk [microwave link](usage) pada frek [UHF](frequency) dengan bandwith [512khz](bandwidth) dan power [500w](power) di [kediri](city) [jawa timur](province)
+
+
+
+
+# - intent: inform
+#   examples: |
+#     - berapa biaya untuk [microwave link](usage) pada frek [UHF](frequency) dengan bandwith [512khz](bandwidth) dan power [500w](power) di [kediri](city) [jawa timur](province)
+#     - [fm komersial](usage)
+#     - [VHF](frequency)
+#     - [EHF](frequency)
+#     - [10 ghz](frequency)
+#     - [125 khz](bandwidth)
+#     - [500 w](power)
+#     - [kediri](city)
+#     - [jawa timur](province)
+#     - [surabaya](city)
+#     - [nganjuk](city)
+
+- intent: goodbye
+  examples: |
+    - cukup
+    - sudah cukup
+    - sudah
+    - tidak ada lagi
+- intent: inform_bhp
+  examples:  |
+    - berapa frekuensi di [UHF](frequency)
+    - berapa frekuensi di [VHF](frequency)
+    - berapa frekuensi di [HF](frequency)
+    - berapa frekuensi di [LF](frequency)
+    - berapa frekuensi di [EHF](frequency)
+    - berapa frekuensi di [microwave link](frequency)
+- intent: greet
+  examples: |
+    - hai selamat pagi
+    - hai selamat siang
+    - hai
+    - halo
+    - selamat pagi
+
+- intent: membantu
+  examples: |
+    -  iya
+    - sangat membantu
+    - cukup membantu
+
+- intent: tidak_membantu
+  examples: |
+    - tidak
+    - tidak membantu
+    - tidak cukup membantu
+    - tidak sesuai
+    - tidak sesuai dengan yang saya inginkan
+    - kurang lengkap
+
+- intent: faq/apa_itu_frekuensi
+  examples: |
+    - apa itu frekuensi
+    - apa yang dimaksud dengan frekuensi
+    - frekuensi itu apa
+    - apa itu spektrum
+
+
+- intent: faq/sanksi_tanpa_izin
+  examples: |
+    - Adakah sanksi atas penggunaan frekuensi radio ilegal (tanpa izin)
+    - apa sanksi jika menggunakan frekuensi tanpa izin
+    - apa ada denda jika menggunakan frekuensi tanpa izin
+
+- intent: faq/jenis_penggunaan
+  examples: |
+    - Apa saja jenis-jenis izin penggunaan spektrum frekuensi radio
+    - izin spektrum radio apa saja
+    - izin apa saja yang dikeluarkan oleh Ditjen SDPPI
+
+
+- intent: faq/apa_itu_dinas_tetap
+  examples: |
+    - Apa yang dimaksud dengan pelayanan Dinas Tetap dan Bergerak Darat (DTBD) dan Non Dinas Tetap dan Bergerak Darat (NDTBD)
+    - apa itu dinas tetap
+    - apa itu dinas bergerak darat
+
+- intent: faq/alasan_penolakan
+  examples: |
+    - Bagaimana Cara Mengetahui Alasan Penolakan Permohonan / Modifikasi Layanan ISR
+    - bagaiamana  agar tahu jika permohonan ditolak
+    - permohonan saya ditolak, bagaimana cara mengetahuinya
+    - permohonan ditolak
+- intent: faq/kendala_pajak
+  examples: |
+    - Bagaimana Cara Mengatasi Kendala Pada Saat Permohonan ISR Land Mobile Karena NPWP Tidak Valid
+    - gimana cara mengatasi masalah saat mengurus ISR
+    - npwp tidak valid, gimana cara mengatasinya?
+
+- intent: faq/mengapa_bayar_pajak
+  examples: |
+    - Mengapa harus membayar Biaya Hak Penggunaan Frekuensi Radio (BHP Frekuensi Radio) 
+    - mengapa harus bayar pajak izin radio
+    - mengapa izin radio berbayar
+    - apa itu  BHP
+    -  apa itu bhp
+    - kenapa harus membayar bhp
+- intent: faq/range_frek
+  examples: |
+    - Pada range frekuensi berapa yang digunakan untuk keperluan radio konvensional/komrad yang digunakan untuk keperluan internal perusahaan atau instansi pemerintah
+    - frek mana yang bisa digunakan oleh perusahaan
+    - perusahaan dan pemerintah bisa pakai frek mana
+    - radio konvensional untuk pemerintah pakai frek yang mana
+- intent: faq/amatir_radio
+  examples: |
+    - Bolehkah menggunakan perangkat Amatir Radio 
+
+
+
+- intent: faq/buat_dokumen
+  examples: |
+    - tolong buatkan dokumen
+    - bagaimana cara membuat dokumen
+    - bisa minta tolong dokumen
+    - kamu bisa bantu buatkan dokumen
+
+- intent: faq/cek_dokumen
+  examples: |
+    - apakah dokumen ini benar
+    - tolong koreksi dong
+    - apa ada yang perlu diedit
+    - apa ada yang salah di dokumenku
+
+- intent: faq/izin_baru
+  examples: |
+    - bagaimana cara membuat izin baru
+    - apa saya yang aku butuhkan untuk membuat izin baru
+    - dokumen apa saja yang diperlukan untuk membuat izin baru
+    - aku ingin membuat izin baru
+    - izin baru
+    - membuat izin
+    - apa syarat
+    - saya ingin membuat izin baru di [microwave link](band)
+    - saya ingin mulai menggunakan
+
+- intent: faq/izin_lama
+  examples: |
+    - perbarui izin
+    - izin lama
+    - bagaimana cara memperbarui izin
+    - izin ku segera mati
+    - izin segera mati
+    - apa syarat perbarui izin
+    - memperbarui
+    - saya ingin memperbarui izin
+    - saya ingin melanjutkan
+
+- intent: faq/undang_undang
+  examples: |
+    - undang undang mana yang menyebut
+    - peraturan mana yang menyebut
+    - peraturan mana yang mengatur
+    - UUD mana
+    - apakah ada uud yang menyebut tentang
+- intent: faq/kenapa
+  examples: |
+    - kenapa kita harus menggunakan izin
+    - mengapa kita harus menggunakan izin
+    - apakah tidak boleh jika tidak menggunakan izin
+    - apakah boleh jika kita tanpa izin
+    - apakah ilegal
+    - saya tidak mempunyai izin
+

@@ -1,0 +1,126 @@
+{
+  "faq/mengapa_bayar_pajak": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 6,
+    "confused_with": {}
+  },
+  "faq/apa_itu_frekuensi": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4,
+    "confused_with": {}
+  },
+  "faq/alasan_penolakan": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4,
+    "confused_with": {}
+  },
+  "faq/izin_lama": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 9,
+    "confused_with": {}
+  },
+  "faq/range_frek": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4,
+    "confused_with": {}
+  },
+  "faq/cek_dokumen": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4,
+    "confused_with": {}
+  },
+  "faq/buat_dokumen": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4,
+    "confused_with": {}
+  },
+  "faq/jenis_penggunaan": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 3,
+    "confused_with": {}
+  },
+  "faq/amatir_radio": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1,
+    "confused_with": {}
+  },
+  "faq/izin_baru": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 9,
+    "confused_with": {}
+  },
+  "faq/apa_itu_dinas_tetap": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 3,
+    "confused_with": {}
+  },
+  "faq/sanksi_tanpa_izin": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 3,
+    "confused_with": {}
+  },
+  "faq/kenapa": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 6,
+    "confused_with": {}
+  },
+  "faq/kendala_pajak": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 3,
+    "confused_with": {}
+  },
+  "faq/undang_undang": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 5,
+    "confused_with": {}
+  },
+  "accuracy": 1.0,
+  "macro avg": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 68
+  },
+  "weighted avg": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 68
+  },
+  "micro avg": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 68
+  }
+}

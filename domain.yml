@@ -1,0 +1,127 @@
+version: '3.1'
+entities:
+  - frequency
+# - bandwidth
+# - city
+
+# - power
+# - usage
+# - province
+
+forms:
+  hitung_bhp:
+    required_slots:
+    - frequency
+#     - bandwidth
+#     - power
+#     - city
+#     - province
+#     - usage
+
+slots:
+  frequency:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: frequency
+
+#   city:
+#     type: text
+#     influence_conversation: false
+#     mappings:
+#     - type: from_entity
+#       entity: city
+
+#   province:
+#     type: text
+#     influence_conversation: false
+#     mappings:
+#     - type: from_entity
+#       entity: province
+
+#   usage:
+#     type: text
+#     influence_conversation: false
+#     mappings:
+#     - type: from_entity
+#       entity: usage
+
+#   power:
+#     type: text
+#     influence_conversation: false
+#     mappings:
+#     - type: from_entity
+#       entity: power
+
+
+#   bandwidth:
+#     type: text
+#     influence_conversation: false
+#     mappings:
+#     - type: from_entity
+#       entity: bandwidth
+
+
+intents:
+- faq
+- greet
+- goodbye
+- inform_bhp
+- membantu
+- tidak_membantu
+responses:
+  utter_membantu:
+    - text: senang bisa membantumu, apa ada yang bisa saya bantu lagi? :)
+    - text: senang bisa membantu :)
+  utter_tidak_membantu:
+    - text: maaf, aku masih perlu banyak belajar :(
+  utter_greet:
+    - text: Halo, ada yang bisa saya bantu?
+    - text: hai, ada yang bisa saya bantu?
+  utter_apakah_membantu:
+    - text: Apakah jawaban yang saya berikan membantu anda?
+    - text: Apakah jawaban yang saya berikan sudah cukup?
+    - text: apakah jawaban saya sesuai dengan yang anda inginkan?
+  utter_goodbye:
+    - text: terimakasih telah menggunakan layanan kami :)
+    - text: sampai jumpa lagi :)
+  utter_faq/inform_bhp:
+    - text: Untuk menghitung biaya hak penggunaan frekuensi radio, silahkan masukkan data berikut ini
+  utter_faq/submit:
+    - text: Terima kasih, permohonan anda sedang diproses
+  utter_faq/alasan_penolakan:
+    - text: 'Dapat dilihat pada spectraweb di menu Draf atau menu Terarsip, atau dapat di cek pada email terdaftar (inbox atau spam) Jika informasi belum tersedia dapat menghubungi Call Center (159 ext 2), Email: callcenter_sdppi@kominfo.go.id, Livechat: https://www.postel.go.id/, atau Wayan: 08111100159 '
+  utter_faq/kendala_pajak:
+    - text: 'Dikarenakan permohonan ISR sudah terintegrasi dengan Ditjen Pajak Kementerian Keuangan, maka segala kegiatan kewajiban terkait pajak harus diselesaikan terlebih dahulu. Jika semua kewajiban sudah dipenuhi dan masih terkendala, dapat menghubungi Call Center 159 ext 2, Email: callcenter_sdppi@kominfo.go.id, Livechat: https://www.postel.go.id/, atau Whatsapp Pelayanan (Wayan): 08111100159'
+  utter_faq/bayar_pajak:
+    - text: Frekuensi radio merupakan sumber daya alam terbatas, strategis dan memiliki nilai ekonomis yang tinggi dan dalam penggunaannya merupakan suatu 'privilege' karena menyebabkan orang lain tidak dapat menggunakan frekuensi radio tersebut di suatu lokasi dan/atau waktu tertentu .BHP Frekuensi Radio wajib dibayar dimuka setiap tahun dan disetor ke kas negara sebagai sumber Pendapatan Negara Bukan Pajak (PNBP).
+  utter_faq/range_frek:
+    - text: ' Range frekuensi radio yang direncanakan untuk keperluan radio konvensional/komrad termasuk untuk Handy Talky (HT) adalah Pita VHF (150 - 174 MHz) dan Pita UHF (300 - 380 MHz) pada range frekuensi radio yang dialokasikan untuk dinas tetap dan/atau dinas bergerak dalam Tabel Alokasi Spektrum Frekuensi Radio Indonesia (TASFRI).'
+  utter_faq/amatir_radio:
+    - text: Penggunaan perangkat Amatir Radio tidak diperbolehkan untuk keperluan radio konvensional/komrad, karena perangkat Amatir Radio hanya digunakan untuk keperluan penyelenggaraan Amatri Radio yang diatur dalam Peraturan Menkominfo No. 33/PER/M.KOMINFO/08/2009 tentang Penyelanggaraan Amatir Radio.
+  utter_faq/jenis_penggunaan:
+    - text: Terdapat 3 (tiga) jenis izin penggunaan spektrum frekuensi radio, yaitu  Izin penggunaan spektrum frekuensi radio dalam bentuk pita  frekuensi radio,disebut dengan Izin Pita Spektrum Frekuensi Radio (IPSFR).
+
+  utter_faq/izin_baru:
+    - text: untuk membuat izin baru pada band {band}, anda perlu
+    - text: dalam pembuatan izin, anda memerlukan ...
+  utter_faq/izin_lama:
+    - text: 'untuk perpanjangan izin, anda perlu menyiapkan '
+  utter_faq/undang_undang:
+    - text: berdasarkan UUD nomer XXXXXX
+  utter_faq/kenapa:
+    - text: setiap warga yang ingin menggunakan spektrum wajib sesuai dengan xxxx
+  utter_faq/mengapa_bayar_pajak:
+    - text: karena frekuensi radio merupakan sumber daya alam terbatas, strategis dan memiliki nilai ekonomis yang tinggi dan dalam penggunaannya merupakan suatu 'privilege' karena menyebabkan orang lain tidak dapat menggunakan frekuensi radio tersebut di suatu lokasi dan/atau waktu tertentu .BHP Frekuensi Radio wajib dibayar dimuka setiap tahun dan disetor ke kas negara sebagai sumber Pendapatan Negara Bukan Pajak (PNBP).
+  utter_faq/apa_itu_frekuensi:
+    - text: Spektrum frekuensi radio merupakan sumber daya alam terbatas yang mempunyai nilai strategis dan ekonomis yang tinggi serta dikelola dan dikuasai oleh negara.Spektrum frekuensi radio dapat dianalogikan sebagai sebidang tanah yang luas dan
+    -  text: frekuensi adalah jumlah gelombang  yang terjadi dalam satu detik
+    -  text: frekuensi adalah besaran yang menyatakan banyak gelombang dalam satu detik
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+actions:
+  - hitung_bhp
+  - utter_faq
+  - utter_goodbye
